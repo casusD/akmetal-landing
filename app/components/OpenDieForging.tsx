@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaCertificate, FaHammer } from 'react-icons/fa';
 
@@ -31,12 +31,7 @@ export function OpenDieForging() {
 
 			<div className='container mx-auto px-4 sm:px-6 lg:px-8 relative'>
 				{/* Баннер-изображение */}
-				<motion.div
-					className='mb-12 h-48 sm:h-64 md:h-80 bg-gray-700/50 rounded-xl overflow-hidden '
-					initial={{ opacity: 0, scale: 0.95 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.8 }}
-				>
+				<div className='mb-12 h-48 sm:h-64 md:h-80 bg-gray-700/50 rounded-xl overflow-hidden '>
 					{/* Замените на реальное изображение */}
 					<Image
 						src='https://www.usinenouvelle.com/mediatheque/9/6/2/000717269_896x598_c.png'
@@ -45,27 +40,17 @@ export function OpenDieForging() {
 						height={100}
 						className='w-full h-full object-cover'
 					/>
-				</motion.div>
+				</div>
 
 				{/* Заголовок */}
-				<motion.h2
-					className='text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-blue-400 tracking-tight'
-					initial={{ opacity: 0, y: -20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.2 }}
-				>
+				<h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-blue-400 tracking-tight'>
 					Open Die Forging
-				</motion.h2>
+				</h2>
 
 				{/* Основной контент */}
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-start'>
 					{/* Текст */}
-					<motion.div
-						className='space-y-4 text-gray-900 text-base sm:text-lg leading-relaxed'
-						initial={{ opacity: 0, x: -30 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 0.4 }}
-					>
+					<div className='space-y-4 text-gray-900 text-base sm:text-lg leading-relaxed'>
 						<p>
 							AKMETAL’s forging department leverages a 1000 MT two-column
 							pulldown oil hydraulic open die forging press and a 6 MT
@@ -80,15 +65,10 @@ export function OpenDieForging() {
 							heat treatment—is certified by third-party approvals, ensuring
 							top-tier quality.
 						</p>
-					</motion.div>
+					</div>
 
 					{/* Placeholder для изображения */}
-					<motion.div
-						className='h-64 sm:h-80 bg-gray-700/50 rounded-xl overflow-hidden'
-						initial={{ opacity: 0, x: 30 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 0.6 }}
-					>
+					<div className='h-64 sm:h-80 bg-gray-700/50 rounded-xl overflow-hidden'>
 						{/* Замените на реальное изображение */}
 						<Image
 							src='https://www.hiperoy.com/images/Banner/-517592.jpg'
@@ -97,16 +77,11 @@ export function OpenDieForging() {
 							height={100}
 							className='w-full h-full object-cover'
 						/>
-					</motion.div>
+					</div>
 				</div>
 
 				{/* Карточки характеристик */}
-				<motion.div
-					className='mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto'
-					initial={{ opacity: 0, y: 30 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.8 }}
-				>
+				<div className='mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto'>
 					{[
 						{
 							text: '2.5 Tons Ingot',
@@ -136,15 +111,10 @@ export function OpenDieForging() {
 							</p>
 						</div>
 					))}
-				</motion.div>
+				</div>
 
 				{/* Кнопка CTA */}
-				<motion.div
-					className='text-center mt-12'
-					initial={{ opacity: 0, scale: 0.9 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.8, delay: 1 }}
-				>
+				<div className='text-center mt-12'>
 					<a
 						href='/certificates'
 						className='inline-flex items-center px-8 py-4 bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors duration-300 gap-2'
@@ -152,7 +122,7 @@ export function OpenDieForging() {
 						<FaCertificate />
 						Check Out Our Certificates
 					</a>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);

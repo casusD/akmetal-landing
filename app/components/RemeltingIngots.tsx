@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaCogs, FaRecycle } from 'react-icons/fa';
 
@@ -31,12 +31,7 @@ export function RemeltingIngots() {
 
 			<div className='container mx-auto px-4 sm:px-6 lg:px-8 relative'>
 				{/* Placeholder для изображения */}
-				<motion.div
-					className='mb-12 h-48 sm:h-64 md:h-80 bg-gray-700/50 rounded-xl overflow-hidden'
-					initial={{ opacity: 0, scale: 0.95 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.8 }}
-				>
+				<div className='mb-12 h-48 sm:h-64 md:h-80 bg-gray-700/50 rounded-xl overflow-hidden'>
 					{/* Замените на реальное изображение */}
 					<Image
 						src='https://www.alcircle.com/api/media/69c8bb8b595d4a2aaaa5576a9a4f93a5_0_0.jpg'
@@ -45,25 +40,15 @@ export function RemeltingIngots() {
 						height={100}
 						className='w-full h-full object-cover'
 					/>
-				</motion.div>
+				</div>
 
 				{/* Заголовок */}
-				<motion.h2
-					className='text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-blue-400 tracking-tight'
-					initial={{ opacity: 0, y: -20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.2 }}
-				>
+				<h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-blue-400 tracking-tight'>
 					Remelting Ingots
-				</motion.h2>
+				</h2>
 
 				{/* Вводный текст */}
-				<motion.div
-					className='max-w-3xl mx-auto text-center text-gray-900 text-base sm:text-lg leading-relaxed mb-12'
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.4 }}
-				>
+				<div className='max-w-3xl mx-auto text-center text-gray-900 text-base sm:text-lg leading-relaxed mb-12'>
 					<p>
 						AKMETAL excels in producing high-quality remelting ingots for
 						foundries lacking the capability to create specialized steels. Our
@@ -71,15 +56,10 @@ export function RemeltingIngots() {
 						the preferred choice for avoiding unexpected challenges in
 						production.
 					</p>
-				</motion.div>
+				</div>
 
 				{/* Типы слитков (карточки) */}
-				<motion.div
-					className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12'
-					initial={{ opacity: 0, y: 30 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.6 }}
-				>
+				<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12'>
 					{[
 						{
 							title: 'Pure Iron',
@@ -122,15 +102,10 @@ export function RemeltingIngots() {
 							</ul>
 						</div>
 					))}
-				</motion.div>
+				</div>
 
 				{/* Преимущества */}
-				<motion.div
-					className='max-w-3xl mx-auto'
-					initial={{ opacity: 0, y: 30 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.8 }}
-				>
+				<div className='max-w-3xl mx-auto'>
 					<h3 className='text-2xl font-semibold text-center mb-6 text-blue-400'>
 						Advantages of Remelting Ingots
 					</h3>
@@ -149,15 +124,10 @@ export function RemeltingIngots() {
 							</li>
 						))}
 					</ul>
-				</motion.div>
+				</div>
 
 				{/* Кнопка CTA */}
-				<motion.div
-					className='text-center mt-12'
-					initial={{ opacity: 0, scale: 0.9 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.8, delay: 1 }}
-				>
+				<div className='text-center mt-12'>
 					<a
 						href='/contact'
 						className='inline-flex items-center px-8 py-4 bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors duration-300 gap-2'
@@ -165,7 +135,7 @@ export function RemeltingIngots() {
 						<FaCogs />
 						Contact Us for Custom Solutions
 					</a>
-				</motion.div>
+				</div>
 			</div>
 
 			{/* Декоративный элемент: тонкая линия с градиентом */}

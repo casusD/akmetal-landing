@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaCogs, FaFire } from 'react-icons/fa';
 
@@ -12,27 +12,17 @@ export function Converter() {
 		>
 			<div className='container mx-auto px-4 sm:px-6 lg:px-8'>
 				{/* Заголовок с иконкой */}
-				<motion.div
-					className='text-center mb-12'
-					initial={{ opacity: 0, y: -20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8 }}
-				>
+				<div className='text-center mb-12'>
 					<h2 className='text-4xl sm:text-5xl font-bold text-blue-400 tracking-tight flex items-center justify-center gap-3 relative'>
 						<FaFire className='text-blue-500' /> AOD Converter
 					</h2>
 					<div className='mt-2 h-1 w-24 bg-blue-500 mx-auto rounded-full'></div>
-				</motion.div>
+				</div>
 
 				{/* Основной контент с изображением слева */}
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center'>
 					{/* Текст */}
-					<motion.div
-						className='space-y-6 text-gray-900 text-lg sm:text-xl leading-relaxed relative'
-						initial={{ opacity: 0, x: -50 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 0.2 }}
-					>
+					<div className='space-y-6 text-gray-900 text-lg sm:text-xl leading-relaxed relative'>
 						<p>
 							The AOD (Argon Oxygen Decarburization) Converter is a cornerstone
 							of AKMETAL’s secondary steel processing, delivering unparalleled
@@ -73,15 +63,10 @@ export function Converter() {
 							high-demand applications in industries such as offshore, energy,
 							defense, heavy-lifting, and mining.
 						</p>
-					</motion.div>
+					</div>
 
 					{/* Placeholder для изображения */}
-					<motion.div
-						className='relative h-64 sm:h-80 lg:h-96 bg-gray-700/50 rounded-lg overflow-hidden'
-						initial={{ opacity: 0, x: 50 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 0.4 }}
-					>
+					<div className='relative h-64 sm:h-80 lg:h-96 bg-gray-700/50 rounded-lg overflow-hidden'>
 						{/* Замените на реальное изображение */}
 						<Image
 							src='https://demo.cmssuperheroes.com/themeforest/koira/wp-content/uploads/2019/08/theme-18.jpg'
@@ -90,16 +75,11 @@ export function Converter() {
 							height={100}
 							className='w-full h-full object-cover'
 						/>
-					</motion.div>
+					</div>
 				</div>
 
 				{/* Дополнительное изображение снизу */}
-				<motion.div
-					className='mt-12 max-w-4xl mx-auto h-48 sm:h-64 bg-gray-700/50 rounded-lg overflow-hidden'
-					initial={{ opacity: 0, y: 50 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.6 }}
-				>
+				<div className='mt-12 max-w-4xl mx-auto h-48 sm:h-64 bg-gray-700/50 rounded-lg overflow-hidden'>
 					{/* Замените на реальное изображение */}
 					<Image
 						src='https://pr6.zoon.ru/KwaGQAxLLUQOOE2AZHVT_A/2400x1500,q75/SCafnnHQ7j4TrbVAJagfzEGLkdLa-9M1oJCR85tjcdIshboGHZEUQoBn6RBOozljIw22yf173SLLQt5LWQvCEA'
@@ -108,7 +88,7 @@ export function Converter() {
 						height={100}
 						className='w-full h-full object-cover'
 					/>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);

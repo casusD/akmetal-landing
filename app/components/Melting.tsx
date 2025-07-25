@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function Melting() {
@@ -11,24 +10,14 @@ export default function Melting() {
 		>
 			<div className='container mx-auto px-4 sm:px-6 lg:px-8 relative'>
 				{/* Header */}
-				<motion.h2
-					className='text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-12 text-blue-400 tracking-tight drop-shadow-md'
-					initial={{ opacity: 0, y: -20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8 }}
-				>
+				<h2 className='text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-12 text-blue-400 tracking-tight drop-shadow-md'>
 					Melting Capabilities
-				</motion.h2>
+				</h2>
 
 				{/* Main Content with Images */}
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16'>
 					{/* Text Content */}
-					<motion.div
-						className='space-y-6 text-lg sm:text-xl leading-relaxed'
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, delay: 0.2 }}
-					>
+					<div className='space-y-6 text-lg sm:text-xl leading-relaxed'>
 						<p>
 							AKMETAL operates a state-of-the-art melting facility with a rich
 							history dating back to 1972. Powered by advanced technology,
@@ -49,15 +38,10 @@ export default function Melting() {
 							products, as well as rapid prototyping, meeting diverse client
 							needs with precision and speed.
 						</p>
-					</motion.div>
+					</div>
 
 					{/* Image Placeholder */}
-					<motion.div
-						className='relative h-96 w-full rounded-xl overflow-hidden shadow-2xl'
-						initial={{ opacity: 0, scale: 0.95 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 0.8, delay: 0.4 }}
-					>
+					<div className='relative h-96 w-full rounded-xl overflow-hidden shadow-2xl'>
 						<Image
 							src='https://a.d-cd.net/hTQAAgDb5eA-1920.jpg'
 							alt='Electric Arc Furnace'
@@ -70,16 +54,12 @@ export default function Melting() {
 								ABB Electric Arc Furnace
 							</span>
 						</div>
-					</motion.div>
+					</div>
 				</div>
 
 				{/* Equipment List with Image */}
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, delay: 0.4 }}
-					>
+					<div>
 						<h3 className='text-2xl sm:text-3xl font-semibold text-center mb-6 text-blue-400 drop-shadow'>
 							Primary Melting Shop Equipment
 						</h3>
@@ -100,15 +80,10 @@ export default function Melting() {
 								</li>
 							))}
 						</ul>
-					</motion.div>
+					</div>
 
 					{/* Second Image Placeholder */}
-					<motion.div
-						className='relative h-96 w-full rounded-xl overflow-hidden shadow-2xl'
-						initial={{ opacity: 0, scale: 0.95 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 0.8, delay: 0.6 }}
-					>
+					<div className='relative h-96 w-full rounded-xl overflow-hidden shadow-2xl'>
 						<Image
 							src='https://images.squarespace-cdn.com/content/v1/5d0f82e3115de80001c4070f/1561322433756-ZZW1ZNYL5BNZE9OSKSZ1/fc1.jpg'
 							alt='Induction Furnace'
@@ -121,7 +96,7 @@ export default function Melting() {
 								EGES Induction Furnace
 							</span>
 						</div>
-					</motion.div>
+					</div>
 				</div>
 			</div>
 		</section>
