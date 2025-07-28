@@ -43,9 +43,12 @@ export function RemeltingIngots() {
 				</div>
 
 				{/* Заголовок */}
-				<h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-blue-400 tracking-tight'>
-					Remelting Ingots
-				</h2>
+				<div className='text-center mb-12'>
+					<h2 className='text-4xl sm:text-5xl font-bold text-blue-400 tracking-tight flex items-center justify-center gap-3 relative'>
+						Remelting Ingots
+					</h2>
+					<div className='mt-2 h-1 w-24 bg-blue-500 mx-auto rounded-full'></div>
+				</div>
 
 				{/* Вводный текст */}
 				<div className='max-w-3xl mx-auto text-center text-gray-900 text-base sm:text-lg leading-relaxed mb-12'>

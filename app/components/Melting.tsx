@@ -10,9 +10,12 @@ export default function Melting() {
 		>
 			<div className='container mx-auto px-4 sm:px-6 lg:px-8 relative'>
 				{/* Header */}
-				<h2 className='text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-12 text-blue-400 tracking-tight drop-shadow-md'>
-					Melting Capabilities
-				</h2>
+				<div className='text-center mb-12'>
+					<h2 className='text-4xl sm:text-5xl font-bold text-blue-400 tracking-tight flex items-center justify-center gap-3 relative'>
+						Melting
+					</h2>
+					<div className='mt-2 h-1 w-24 bg-blue-500 mx-auto rounded-full'></div>
+				</div>
 
 				{/* Main Content with Images */}
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16'>

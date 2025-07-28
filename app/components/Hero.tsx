@@ -1,66 +1,13 @@
-'use client'; // Директива для клиентского компонента
+'use client';
 
-// import { type ISourceOptions } from '@tsparticles/engine';
-// import { initParticlesEngine } from '@tsparticles/react';
-// import { loadSlim } from '@tsparticles/slim';
-// import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export function Hero() {
-	// const [init, setInit] = useState(false);
-
-	// Инициализация движка частиц
-	// useEffect(() => {
-	// 	initParticlesEngine(async engine => {
-	// 		await loadSlim(engine); // Используем slim-версию для оптимизации
-	// 		setInit(true);
-	// 	}).catch(error => {
-	// 		console.error('Failed to initialize particles:', error);
-	// 	});
-	// }, []);
-
-	// Настройки частиц с типизацией
-	// const particlesOptions: ISourceOptions = {
-	// 	particles: {
-	// 		number: { value: 80, density: { enable: true } },
-	// 		color: { value: ['#ff4500', '#ffa500', '#ffffff'] }, // Оранжевый, желтый, белый для искр
-	// 		shape: { type: 'circle' },
-	// 		opacity: {
-	// 			value: { min: 0.2, max: 0.8 },
-	// 			animation: { enable: true, speed: 3 },
-	// 		},
-	// 		size: {
-	// 			value: { min: 1, max: 4 },
-	// 			animation: { enable: true, speed: 5 },
-	// 		},
-	// 		move: {
-	// 			enable: true,
-	// 			speed: { min: 2, max: 5 },
-	// 			direction: 'bottom', // Искры падают вниз
-	// 			random: true,
-	// 			outModes: { default: 'out' },
-	// 		},
-	// 	},
-	// 	interactivity: {
-	// 		events: {
-	// 			// onHover: { enable: true, mode: 'repulse' },
-	// 			onClick: { enable: true, mode: 'push' },
-	// 		},
-	// 	},
-	// 	detectRetina: true,
-	// };
-
 	return (
 		<section
 			id='home'
 			className='relative min-h-screen overflow-hidden flex items-center'
 		>
-			{/* {init && (
-				<Particles
-					id='tsparticles'
-					options={particlesOptions}
-					className='absolute inset-0 z-0'
-				/>
-			)} */}
 			<div className='relative container mx-auto text-center text-gray-900'>
 				<div className='mx-auto w-fit rounded-full bg-gradient-to-b from-gray-200/50 to-transparent px-6 py-3 text-lg shadow-md mb-10'>
 					Welcome to AKMETAL
@@ -76,6 +23,41 @@ export function Hero() {
 					casting and forging solutions.
 				</p>
 			</div>
+			<Image
+				src={'/97.jpg'}
+				alt='image'
+				width={280}
+				height={100}
+				className='absolute left-10 top-25 rounded-xl xl:block hidden w-[300px] h-[280px]'
+			/>
+			<Image
+				src={'/54776401_2.jpg'}
+				alt='image'
+				width={350}
+				height={100}
+				className='absolute left-35 bottom-35  rounded-xl xl:block hidden'
+			/>
+			<Image
+				src={'/cast-steel-foundry.jpg'}
+				alt='image'
+				width={350}
+				height={100}
+				className='absolute right-35 bottom-35 rounded-xl xl:block hidden'
+			/>
+			<Image
+				src={'/Homepage-feature2.webp'}
+				alt='image'
+				width={300}
+				height={100}
+				className='absolute right-10 top-25 rounded-xl xl:block hidden w-[300px] h-[280px]'
+			/>
+			<Image
+				src={'/steel-manufacturing-molten.jpg'}
+				alt='image'
+				width={350}
+				height={100}
+				className='absolute left-[50%] -translate-x-1/2 top-40 rounded-xl xl:block hidden'
+			/>
 		</section>
 	);
 }

@@ -2,7 +2,7 @@
 
 // import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaCogs, FaFire } from 'react-icons/fa';
+import { FaCogs } from 'react-icons/fa';
 
 export function Converter() {
 	return (
@@ -14,7 +14,7 @@ export function Converter() {
 				{/* Заголовок с иконкой */}
 				<div className='text-center mb-12'>
 					<h2 className='text-4xl sm:text-5xl font-bold text-blue-400 tracking-tight flex items-center justify-center gap-3 relative'>
-						<FaFire className='text-blue-500' /> AOD Converter
+						{/* <FaFire className='text-blue-500' /> */} AOD Converter
 					</h2>
 					<div className='mt-2 h-1 w-24 bg-blue-500 mx-auto rounded-full'></div>
 				</div>
@@ -69,7 +69,7 @@ export function Converter() {
 					<div className='relative h-64 sm:h-80 lg:h-96 bg-gray-700/50 rounded-lg overflow-hidden'>
 						{/* Замените на реальное изображение */}
 						<Image
-							src='https://demo.cmssuperheroes.com/themeforest/koira/wp-content/uploads/2019/08/theme-18.jpg'
+							src='/converter1.webp'
 							alt='AOD Converter'
 							width={300}
 							height={100}
@@ -82,9 +82,9 @@ export function Converter() {
 				<div className='mt-12 max-w-4xl mx-auto h-48 sm:h-64 bg-gray-700/50 rounded-lg overflow-hidden'>
 					{/* Замените на реальное изображение */}
 					<Image
-						src='https://pr6.zoon.ru/KwaGQAxLLUQOOE2AZHVT_A/2400x1500,q75/SCafnnHQ7j4TrbVAJagfzEGLkdLa-9M1oJCR85tjcdIshboGHZEUQoBn6RBOozljIw22yf173SLLQt5LWQvCEA'
+						src='/converter2.jpg'
 						alt='Steel Facility'
-						width={300}
+						width={500}
 						height={100}
 						className='w-full h-full object-cover'
 					/>

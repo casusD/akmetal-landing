@@ -43,9 +43,12 @@ export function OpenDieForging() {
 				</div>
 
 				{/* Заголовок */}
-				<h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-blue-400 tracking-tight'>
-					Open Die Forging
-				</h2>
+				<div className='text-center mb-12'>
+					<h2 className='text-4xl sm:text-5xl font-bold text-blue-400 tracking-tight flex items-center justify-center gap-3 relative'>
+						Open Die Forging
+					</h2>
+					<div className='mt-2 h-1 w-24 bg-blue-500 mx-auto rounded-full'></div>
+				</div>
 
 				{/* Основной контент */}
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-start'>

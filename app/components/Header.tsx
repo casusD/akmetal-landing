@@ -10,18 +10,18 @@ export function Header() {
 	];
 	return (
 		<header
-			className='sticky top-10 mx-auto bg-white z-10 w-10/12 rounded-xl'
+			className='sticky top-10 mx-auto bg-white z-10 lg:w-11/12 md:w-full w-[98%] rounded-xl'
 			style={{ boxShadow: '0 0px 10px rgba(124, 124, 124, 0.25)' }}
 		>
-			<div className='container mx-auto px-4 py-4 flex justify-center'>
+			<div className='container mx-auto lg:px-4 py-4 flex justify-center'>
 				{/* <div className='text-2xl font-bold text-gray-800'>AKMETAL</div> */}
-				<nav className='mx-auto w-11/12'>
+				<nav className='mx-auto 2xl:w-11/12 lg:w-full md:w-[97%] w-[98%]'>
 					<ul className='flex justify-between'>
 						{sections.map(section => (
 							<li key={section.name}>
 								<a
 									href={`#${section.path}`}
-									className='text-sm text-gray-600 text-center hover:text-blue-600 transition'
+									className='text-[10px] lg:text-sm text-gray-600 text-center hover:text-blue-600 transition'
 								>
 									{section.name}
 								</a>

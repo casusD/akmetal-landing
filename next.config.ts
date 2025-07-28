@@ -60,6 +60,10 @@ const nextConfig: NextConfig = {
 				protocol: 'https',
 				hostname: 'www.alcircle.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'via.placeholder.com',
+			},
 		],
 	},
 };

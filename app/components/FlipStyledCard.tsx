@@ -14,7 +14,7 @@ export function FlipStyledCard(product: ProductProps) {
 	return (
 		<div
 			key={product.name}
-			className={` transition-all duration-700 perspective relative w-[350px] h-[400px]`}
+			className={`transition-all duration-700 perspective relative md:w-[350px] 2xl:w-[350px] lg:w-[230px]  xl:w-[280px] w-[270px] h-[400px]`}
 		>
 			<div
 				className={`relative w-full h-full transition-all duration-700 transform-style preserve-3d ${
