@@ -4,8 +4,8 @@ import { FlipStyledCard, ProductProps } from './FlipStyledCard';
 export function Products() {
 	const products: ProductProps[] = [
 		{
-			name: 'Нержавеющая сталь',
-			desc: 'Устойчива к коррозии и долговечна',
+			name: 'Stainless steel',
+			desc: 'It is resistant to corrosion and durable.',
 			img: 'https://avatars.mds.yandex.net/i?id=dded65ca5bad784af0ccbd667818c691_l-6372940-images-thumbs&n=13',
 			details: [
 				'ASTM A487 CA15',
@@ -32,8 +32,8 @@ export function Products() {
 			category: 'Stainless Steels and Heat Resistant Steels',
 		},
 		{
-			name: 'Низколегированная сталь',
-			desc: 'Высокая прочность и свариваемость',
+			name: 'Low-alloy steel',
+			desc: 'High strength and weldability',
 			img: 'https://www.cumic.com/uploads/image/20240806/16/low-alloy-steel.webp',
 			details: [
 				'DIN EN 10293 G10MnMoV6-3 – 1.5410',
@@ -56,8 +56,8 @@ export function Products() {
 			category: 'Low Alloy Steels',
 		},
 		{
-			name: 'Углеродистая сталь',
-			desc: 'Универсальна и экономична',
+			name: 'Carbon steel',
+			desc: 'Versatile and economical',
 			img: 'https://cnc-detal.com/wp-content/uploads/2025/02/slide-1.jpg',
 			details: [
 				'DIN EN 10293 GE240 (GS45) – 1.0446',
@@ -77,8 +77,8 @@ export function Products() {
 			category: 'Carbon Steels',
 		},
 		{
-			name: 'Открытая ковка',
-			desc: 'Прецизионные поковки для индивидуальных решений',
+			name: 'Open forging',
+			desc: 'Precision forgings for customized solutions',
 			img: 'https://i.ytimg.com/vi/yy2PLYFjZ6w/maxresdefault.jpg',
 			details: [
 				'SAE 4340',

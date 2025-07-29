@@ -34,7 +34,7 @@ export function RemeltingIngots() {
 				<div className='mb-12 h-48 sm:h-64 md:h-80 bg-gray-700/50 rounded-xl overflow-hidden'>
 					{/* Замените на реальное изображение */}
 					<Image
-						src='https://www.alcircle.com/api/media/69c8bb8b595d4a2aaaa5576a9a4f93a5_0_0.jpg'
+						src='/remelting.jpg'
 						alt='Remelting Ingots'
 						width={500}
 						height={100}

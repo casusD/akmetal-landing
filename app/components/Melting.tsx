@@ -46,7 +46,7 @@ export default function Melting() {
 					{/* Image Placeholder */}
 					<div className='relative h-96 w-full rounded-xl overflow-hidden shadow-2xl'>
 						<Image
-							src='https://a.d-cd.net/hTQAAgDb5eA-1920.jpg'
+							src='/melting1.jpg'
 							alt='Electric Arc Furnace'
 							fill
 							className='object-cover'
@@ -88,7 +88,7 @@ export default function Melting() {
 					{/* Second Image Placeholder */}
 					<div className='relative h-96 w-full rounded-xl overflow-hidden shadow-2xl'>
 						<Image
-							src='https://images.squarespace-cdn.com/content/v1/5d0f82e3115de80001c4070f/1561322433756-ZZW1ZNYL5BNZE9OSKSZ1/fc1.jpg'
+							src='/melting2.webp'
 							alt='Induction Furnace'
 							fill
 							className='object-cover'

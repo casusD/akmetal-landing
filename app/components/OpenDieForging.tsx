@@ -34,7 +34,7 @@ export function OpenDieForging() {
 				<div className='mb-12 h-48 sm:h-64 md:h-80 bg-gray-700/50 rounded-xl overflow-hidden '>
 					{/* Замените на реальное изображение */}
 					<Image
-						src='https://www.usinenouvelle.com/mediatheque/9/6/2/000717269_896x598_c.png'
+						src='/open1.png'
 						alt='Forging Department'
 						width={300}
 						height={100}
@@ -74,7 +74,7 @@ export function OpenDieForging() {
 					<div className='h-64 sm:h-80 bg-gray-700/50 rounded-xl overflow-hidden'>
 						{/* Замените на реальное изображение */}
 						<Image
-							src='https://www.hiperoy.com/images/Banner/-517592.jpg'
+							src='/open2.jpg'
 							alt='Forged Steel Parts'
 							width={300}
 							height={100}
